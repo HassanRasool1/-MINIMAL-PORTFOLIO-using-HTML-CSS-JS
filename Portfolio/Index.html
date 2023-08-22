@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Port</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header> 
+            <div class="logo">
+                <i class="fa-solid fa-square-h"></i>
+                <div class="logo-text">Hassan Rasool</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                   
+                    <!--                   <i class="fa-solid fa-bars"></i>-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="Pitb.jpg">Home</a></li>
+                    <li><a href="#">Work Folio</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Achivements</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="IMG_3379.PNG" alt="Profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hassi here, I'm a<span id="input"> Frontend Develper</span></h5>
+                    <h1>Hassan Rasool</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nesciunt facere molestias voluptatibus nostrum nobis optio soluta alias laboriosam! Repudiandae, quam at ea saepe quisquam placeat dolores inventore consequatur fugit!</p>
+                    <div class="btn-group">
+                        <a href="cv.pdf" download class="btn">Profile CV <i class="fa-solid fa-download"></i></a>
+                        <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXo7B7VcXvfVlf5umPpvNWMrA9budsJgd2R0HluGb28UybUjZtUr6J8Gf4ZsDHXVZJdEOTax0L5_DQ&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S487445934%3A1692683932563372" class="btn">Contact Me</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/HassiRaajpoot/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hassi_raajpoot/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hassan-rasool-609604121/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hassanrasool1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/channels/576818597511299076/576818598291701772"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=923366881223"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="port.js"></script>
+    <!--<script>https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js</script>
+    -->
+    <script> 
+    var togglebtn=document.querySelector(".togglebtn")
+    var nav=document.querySelector(".navlinks")
+    var links=document.querySelector(".navlinks li")
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+                               })
+        
+        var typed=new typed(".input",{
+            strings:("Frontend Developer", "Data Scientist","Project Manager"),
+            typedspeed:70,
+            backspeed: 55,
+//            smartbackspace:true,
+            loop:true
+        }) 
+    </script> 
+</body>
+</html>
